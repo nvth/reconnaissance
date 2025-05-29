@@ -1,5 +1,6 @@
 from telegram.ext import Updater, CommandHandler
 from data import *
+
 TOKEN = get_bot_token()
 
 def start(update, context):
@@ -12,7 +13,10 @@ def main():
 
     dp.add_handler(CommandHandler("start", start))
 
+    dp.add_handler(CommandHandler("s", start_scan))
+
     dp.add_handler(CommandHandler("scan", scan_nuclei))
+    dp.add_handler(CommandHandler("ss", scan_subfinder))
     
     updater.start_polling()
 

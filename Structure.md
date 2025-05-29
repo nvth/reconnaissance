@@ -28,7 +28,11 @@ recon-pipeline/
 │   │   └── common.sh                # Các hàm dùng chung
 │
 ├── templates/
-│   └── nuclei-custom                # Custom Nuclei templates                    
+│   ├── nuclei/
+│   │   ├── nuclei-custom/           # Custom Nuclei templates
+│   │   └── nuclei-templates/        # nuclei defaut template
+|   └── subfinder                    
+|                                      
 │
 ├── config/
 │   ├── nuclei 
